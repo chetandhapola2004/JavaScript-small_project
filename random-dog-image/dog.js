@@ -5,8 +5,17 @@ let image = document.querySelector("#image");
 let linkTag = document.querySelector("#link");
 
 button.addEventListener("click", async () => {
-    let response = await axios.get(url);
-    let imgUrl = response.data.message;
-    image.src = imgUrl;         
-    linkTag.href = imgUrl;       
+    try {
+        let response = await fetch(url);
+        let data = await response.json();
+
+        let imgUrl = data.message;
+
+        image.src = imgUrl;
+        linkTag.href = imgUrl;
+
+    } catch (error) {
+        console.log("Error:", error);
+        alert("Failed to load image ❌");
+    }
 });
