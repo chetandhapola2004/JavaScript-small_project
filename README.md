@@ -37,7 +37,7 @@ This project shows random dog images using an API.
 It helps in learning how to fetch and display images dynamically.
 
 👉 **Try it here:**
-https://chetandhapola2004.github.io/JavaScript-small_project/Random%20dog%20image/
+https://chetandhapola2004.github.io/JavaScript-small_project/random-dog-image/
 
 
 ## 🛠️ Technologies Used
