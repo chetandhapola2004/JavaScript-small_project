@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Cat Facts</title>
+
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, sans-serif;
+    }
+
+    body {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-image: url("cute-cat-nature.jpg"); 
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .container {
+        background: rgba(255, 255, 255, 0.88);
+        backdrop-filter: blur(6px);
+        padding: 55px 65px;             
+        border-radius: 22px;
+        width: 95%;
+        max-width: 560px;               
+        text-align: center;
+        box-shadow: 0 25px 45px rgba(0, 0, 0, 0.25);
+
+        transform: translateY(-40px);    
+    }
+
+    h1 {
+        font-size: 30px;
+        margin-bottom: 28px;
+        color: #2f3e46;                
+    }
+
+    button {
+        background: linear-gradient(135deg, #6fb1a0, #9ad1c2);
+        color: #1f2d2b;
+        border: none;
+        padding: 16px 38px;
+        border-radius: 35px;
+        font-size: 17px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        margin-bottom: 28px;
+    }
+
+    button:hover {
+        transform: scale(1.08);
+        box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+    }
+
+    p {
+        font-size: 18px;
+        font-weight: bold;              
+        color: #344e41;
+        line-height: 1.8;
+        min-height: 65px;
+    }
+</style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Random Cat Fact 🐱</h1>
+        <button>Get Fact</button>
+        <p>Click the button to learn something cool about cats!</p>
+    </div>
+
+    <!-- Axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.13.2/dist/axios.min.js"></script>
+    <script src="axious.js"></script>
+
+</body>
+</html>
